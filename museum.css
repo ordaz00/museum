@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+#stripe{
+    background-color: rgba(0, 130, 120, 0.1);
+    position: absolute;
+    width: 100vw;
+    height:220px;
+    margin-top: 80px;
+    z-index: -1;
+}
+
+#logotext1{
+    font-family: Montserrat;
+    font-size: 16px;
+    margin-top: 30;
+    flex-wrap: nowrap;
+}
+
+#logotext2{
+    font-family: Montserrat;
+    font-weight: 700;
+    color: rgb(0, 130, 120);
+    font-size: 16px;
+    flex-wrap: nowrap;
+
+}
+
+#logotext3{
+    font-family: Montserrat;
+    font-size: 16px;
+    flex-wrap: nowrap;
+}
+
+.captions{
+    font-size: 14px;
+    font-family: Montserrat;
+}
+
+.bodytext{
+    font-size: 20px;
+    font-family: Montserrat;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tile{
+    margin: 30px;
+	min-width: 250px;
+    max-width: 500px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Montserrat;
+    color: rgb(2, 40, 81);
+}
+.body_img{
+    width: 100%;
+}
+
+header{
+    display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#museum_logo{
+    width: 110px;
+    margin: 20px;
+}
+
+#logo_area{
+    display: flex;
+	flex-direction: row;
+    order: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    order: 2;
+}
+
+main{
+    display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media(max-width:1000px){
+    header{
+        display: flex;
+	    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 100;
+        margin-left: 0px;
+    }
+    #title{
+        order: 1;
+    }
+    h1{
+        font-size: 24px;
+    }
+    #stripe{
+        margin-top: 0;
+        position: absolute;
+    }
+    .tile{
+        display: flex;
+        flex-direction: column;
+    }
+    .body_img{
+        order: 1;
+    }
+    .bodytext{
+        font-size: 18px;
+        order: 2;
+    }
+    main{
+        flex-direction: column;
+    }
+}

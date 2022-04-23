@@ -1,0 +1,83 @@
+/* CSS for exotic poultry page */
+/* This page used the debug technique of giving every element a different background color */
+/* To see what it ought to look like uncomment the spec at the bottom of this file */
+
+
+body {
+     background-color: gray;
+     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   }
+
+
+header {
+	background-color: paleturquoise;
+	text-align: center;
+	font-size: xx-large;
+	margin: 20px;
+}
+
+p {
+	background-color: lavender;
+   }
+
+#intro {
+	margin: 20px;
+   }
+
+section#birdTileBox {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+   	justify-content: center; /* main direction, in this case row */
+   	align-items: flex-start;	/* cross direction */
+   	align-content: center;  /* only useful with wrap */
+}
+
+
+
+p.bird {
+	background-color: pink;
+	margin: 10px;
+	margin-top: 15px;
+  }
+
+
+div.birdTile {
+	background-color: goldenrod;
+	margin: 10px;
+	width: 30%;
+	min-width: 250px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+img {
+	background-color: thistle;
+	margin: 10px;
+	margin-bottom: 0px;
+	width: 80%;
+	min-width: 250px;
+	max-width: 380px;
+   }
+
+
+footer {
+	background-color: paleturquoise;
+	margin: 10px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+body, header, footer, main, p.bird, div.birdTile  {
+	/* background-color: ivory; */
+}
+
+
+
